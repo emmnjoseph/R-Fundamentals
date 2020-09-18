@@ -1,0 +1,45 @@
+---
+title: "R Basics, Functions, and Data Types"
+output: html_notebook
+---
+## Variables
+```{r}
+a <- 1
+b <- 2
+c <- 3
+ls() #gives the objects you  currently have
+```
+```{r}
+log(a)
+```
+
+This shows you available datasets you could use
+```{r}
+data() 
+```
+
+## Data Types
+```{r}
+# use class() to determine data type
+class(a) 
+class(ls)
+```
+```{r}
+#installing packages
+install.packages("dslabs")
+```
+
+```{r}
+#loading a library
+library(dslabs)
+data("murders")
+class(murders) #check if is a data frame
+```
+```{r}
+str(murders) # str() shows structure of dataset
+```
+## Working with Data Sets
+```{r}
+# $ allows you to access parts of a data frame
+murders$population
+```
